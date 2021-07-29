@@ -66,9 +66,6 @@ def track_investments(curr, start, funds, random, csv):
     click.echo(f'')
 
     # export to csv
-    dw.get_dataviz_data()
-    dw.dataviz_data.to_csv('dataviz.csv')
-
     if csv and not dw.summary.empty:
         dw.summary.to_csv('currency-wallet-summary.csv')
 
